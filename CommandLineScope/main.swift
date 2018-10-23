@@ -10,3 +10,5 @@ import Foundation
 
 print("Hello, World! Command Line Scope")
 
+print("Hello, World! GitHub Test")
+
