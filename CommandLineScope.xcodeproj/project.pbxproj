@@ -10,6 +10,7 @@
 		3D8CBD3B217DDE0A000EAC01 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8CBD3A217DDE0A000EAC01 /* main.swift */; };
 		3DFBF777217EBAB40015319C /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFBF776217EBAB40015319C /* ConsoleIO.swift */; };
 		3DFBF77A217EC0830015319C /* ScopeShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFBF779217EC0830015319C /* ScopeShell.swift */; };
+		3DFBF77C217EC9E40015319C /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFBF77B217EC9E40015319C /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		3D8CBD3A217DDE0A000EAC01 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3DFBF776217EBAB40015319C /* ConsoleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
 		3DFBF779217EC0830015319C /* ScopeShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScopeShell.swift; sourceTree = "<group>"; };
+		3DFBF77B217EC9E40015319C /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			children = (
 				3D8CBD3A217DDE0A000EAC01 /* main.swift */,
 				3DFBF779217EC0830015319C /* ScopeShell.swift */,
+				3DFBF77B217EC9E40015319C /* StringExtension.swift */,
 				3DFBF776217EBAB40015319C /* ConsoleIO.swift */,
 			);
 			path = CommandLineScope;
@@ -125,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DFBF77C217EC9E40015319C /* StringExtension.swift in Sources */,
 				3D8CBD3B217DDE0A000EAC01 /* main.swift in Sources */,
 				3DFBF777217EBAB40015319C /* ConsoleIO.swift in Sources */,
 				3DFBF77A217EC0830015319C /* ScopeShell.swift in Sources */,

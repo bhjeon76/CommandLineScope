@@ -12,9 +12,9 @@ print("Hello, World! Command Line Scope")
 
 let scopeShell = ScopeShell()
 
-if CommandLine.argc < 2 {
-    //TODO: Handle interactive mode
-} else {
+if CommandLine.argc < 2 { // without argument
+    scopeShell.interactiveMode()
+} else { // with argument
     scopeShell.staticMode()
 }
 
