@@ -33,8 +33,9 @@ class ScopeShell {
         let argCount = CommandLine.argc
         let argument = CommandLine.arguments[1]
         
-        let (option, value) = getOption(argument.substring(from: argument.index(argument.startIndex, offsetBy: 1)))
-
+        //bhjeon swift4.0 update let (option, value) = getOption(argument.substring(from: argument.index(argument.startIndex, offsetBy: 1)))
+        let (option, value) = getOption(String(argument[argument.index(argument.startIndex, offsetBy: 1)]))
+        
         consoleIO.writeMessage("Argument count: \(argCount) Option: \(option) value: \(value)")
         
         switch option {
