@@ -63,7 +63,7 @@ class ScopeShell {
             
             switch option {
             case .idn:
-                consoleIO.writeMessage("idn processing...")
+                consoleIO.writeMessage("todo idn processing...")
             case .help:
                 consoleIO.printUsage()
             case .unknown, .quit:
