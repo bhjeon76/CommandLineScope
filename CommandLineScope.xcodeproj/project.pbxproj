@@ -11,7 +11,25 @@
 		3DFBF777217EBAB40015319C /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFBF776217EBAB40015319C /* ConsoleIO.swift */; };
 		3DFBF77A217EC0830015319C /* ScopeShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFBF779217EC0830015319C /* ScopeShell.swift */; };
 		3DFBF77C217EC9E40015319C /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFBF77B217EC9E40015319C /* StringExtension.swift */; };
+		DA61736B09375C1114CA736F /* libPods-CommandLineScope.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFEFC0C561E5A872916565A8 /* libPods-CommandLineScope.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DA6010B218319FE00304A98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DA60106218319FE00304A98 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0079E6F3FBB0B7F133DD7F23269297AC;
+			remoteInfo = ORSSerialPort;
+		};
+		3DA6010D218319FE00304A98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DA60106218319FE00304A98 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BB4A1EE51A87F08C6B9543884C295A32;
+			remoteInfo = "Pods-CommandLineScope";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		3D8CBD35217DDE0A000EAC01 /* CopyFiles */ = {
@@ -26,11 +44,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		19E78D88D30DE53EE1093664 /* Pods-CommandLineScope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommandLineScope.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommandLineScope/Pods-CommandLineScope.release.xcconfig"; sourceTree = "<group>"; };
 		3D8CBD37217DDE0A000EAC01 /* CommandLineScope */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CommandLineScope; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D8CBD3A217DDE0A000EAC01 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		3DA60106218319FE00304A98 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		3DF805372183176500CC3208 /* CommandLineScope-Bridge-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CommandLineScope-Bridge-Header.h"; sourceTree = SOURCE_ROOT; };
 		3DFBF776217EBAB40015319C /* ConsoleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
 		3DFBF779217EC0830015319C /* ScopeShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScopeShell.swift; sourceTree = "<group>"; };
 		3DFBF77B217EC9E40015319C /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		7F3C9753B33A84E71C4B9495 /* Pods-CommandLineScope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommandLineScope.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommandLineScope/Pods-CommandLineScope.debug.xcconfig"; sourceTree = "<group>"; };
+		BFEFC0C561E5A872916565A8 /* libPods-CommandLineScope.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CommandLineScope.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,17 +61,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA61736B09375C1114CA736F /* libPods-CommandLineScope.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04CBC25A896D168F19EC9EBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFEFC0C561E5A872916565A8 /* libPods-CommandLineScope.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3D8CBD2E217DDE0A000EAC01 = {
 			isa = PBXGroup;
 			children = (
+				3DA60106218319FE00304A98 /* Pods.xcodeproj */,
 				3D8CBD39217DDE0A000EAC01 /* CommandLineScope */,
 				3D8CBD38217DDE0A000EAC01 /* Products */,
+				F16817EEF04739C960E71485 /* Pods */,
+				04CBC25A896D168F19EC9EBE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,8 +102,27 @@
 				3DFBF779217EC0830015319C /* ScopeShell.swift */,
 				3DFBF77B217EC9E40015319C /* StringExtension.swift */,
 				3DFBF776217EBAB40015319C /* ConsoleIO.swift */,
+				3DF805372183176500CC3208 /* CommandLineScope-Bridge-Header.h */,
 			);
 			path = CommandLineScope;
+			sourceTree = "<group>";
+		};
+		3DA60107218319FE00304A98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DA6010C218319FE00304A98 /* libORSSerialPort.a */,
+				3DA6010E218319FE00304A98 /* libPods-CommandLineScope.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F16817EEF04739C960E71485 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F3C9753B33A84E71C4B9495 /* Pods-CommandLineScope.debug.xcconfig */,
+				19E78D88D30DE53EE1093664 /* Pods-CommandLineScope.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +132,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D8CBD3E217DDE0A000EAC01 /* Build configuration list for PBXNativeTarget "CommandLineScope" */;
 			buildPhases = (
+				8779E784F368581D47B84247 /* [CP] Check Pods Manifest.lock */,
 				3D8CBD33217DDE0A000EAC01 /* Sources */,
 				3D8CBD34217DDE0A000EAC01 /* Frameworks */,
 				3D8CBD35217DDE0A000EAC01 /* CopyFiles */,
@@ -116,12 +171,60 @@
 			mainGroup = 3D8CBD2E217DDE0A000EAC01;
 			productRefGroup = 3D8CBD38217DDE0A000EAC01 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3DA60107218319FE00304A98 /* Products */;
+					ProjectRef = 3DA60106218319FE00304A98 /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3D8CBD36217DDE0A000EAC01 /* CommandLineScope */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3DA6010C218319FE00304A98 /* libORSSerialPort.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libORSSerialPort.a;
+			remoteRef = 3DA6010B218319FE00304A98 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3DA6010E218319FE00304A98 /* libPods-CommandLineScope.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-CommandLineScope.a";
+			remoteRef = 3DA6010D218319FE00304A98 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8779E784F368581D47B84247 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommandLineScope-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D8CBD33217DDE0A000EAC01 /* Sources */ = {
@@ -255,20 +358,24 @@
 		};
 		3D8CBD3F217DDE0A000EAC01 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F3C9753B33A84E71C4B9495 /* Pods-CommandLineScope.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5BPEKL7QG6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CommandLineScope-Bridge-Header.h";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		3D8CBD40217DDE0A000EAC01 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19E78D88D30DE53EE1093664 /* Pods-CommandLineScope.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5BPEKL7QG6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CommandLineScope-Bridge-Header.h";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
