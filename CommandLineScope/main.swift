@@ -10,12 +10,44 @@ import Foundation
 
 class SerialHandler : NSObject, ORSSerialPortDelegate {
     
+    let standardInputFileHandle = FileHandle.standardInput
     var serialPort: ORSSerialPort?
     
+    func runProcessingInput() {
+        setbuf(stdout, nil)
+        
+        standardInputFileHandle.readabilityHandler = { (fileHandle: FileHandle!) in
+            let data = fileHandle.availableData
+            DispatchQueue.main.async(execute: { () -> Void in
+                self.handleUserInput(dataFromUser: data as NSData)
+            })
+        }
+        
+        self.serialPort = ORSSerialPort(path: "/dev/cu.Repleo-PL2303-00401414") // please adjust to your handle
+        self.serialPort?.baudRate = 9600
+        self.serialPort?.delegate = self
+        serialPort?.open()
+        
+        RunLoop.current.run() // loop
+    }
+    
+    
+    func handleUserInput(dataFromUser: NSData) {
+        if let string = NSString(data: dataFromUser as Data, encoding: String.Encoding.utf8.rawValue) as String? {
+
+            if string.hasPrefix("exit") ||
+                string.hasPrefix("quit") {
+                
+                print("Quitting...")
+                exit(EXIT_SUCCESS)
+            }
+            self.serialPort?.send(dataFromUser as Data)
+        }
+    }
+    
+    
     // ORSSerialPortDelegate
-    
-    
-    
+
     func serialPort(serialPort: ORSSerialPort, didReceiveData data: NSData) {
         if let string = NSString(data: data as Data, encoding: String.Encoding.utf8.rawValue) {
             print("\(string)")
@@ -54,11 +86,15 @@ class SerialHandler : NSObject, ORSSerialPortDelegate {
 }
 //print("Hello, World! Command Line Scope")
 
-let scopeShell = ScopeShell()
+print("Starting serial test program")
+print("To quit type: 'exit' or 'quit'")
+SerialHandler().runProcessingInput()
 
-if CommandLine.argc < 2 { // without argument
-    scopeShell.interactiveMode()
-} else { // with argument
-    scopeShell.staticMode()
-}
+//let scopeShell = ScopeShell()
+//
+//if CommandLine.argc < 2 { // without argument
+//    scopeShell.interactiveMode()
+//} else { // with argument
+//    scopeShell.staticMode()
+//}
 
