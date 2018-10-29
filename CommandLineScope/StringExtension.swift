@@ -9,5 +9,16 @@
 import Foundation
 
 extension String {
+    func toDouble()->Double? {
+        return NumberFormatter().number(from: self)?.doubleValue
+    }
     
+    func toInteger()->Int? {
+        return NumberFormatter().number(from: self)?.intValue
+    }
+    
+    func trim() -> String
+    {
+        return self.trimmingCharacters(in: CharacterSet.whitespaces)
+    }
 }

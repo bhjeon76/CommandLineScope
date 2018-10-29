@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D4805022186A3E60009F891 /* DeviceControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4804FF2186A3E60009F891 /* DeviceControl.swift */; };
+		3D4805042186A48A0009F891 /* LogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4805032186A48A0009F891 /* LogController.swift */; };
+		3D4805062186A4EB0009F891 /* FileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4805052186A4EB0009F891 /* FileController.swift */; };
 		3D8CBD3B217DDE0A000EAC01 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8CBD3A217DDE0A000EAC01 /* main.swift */; };
 		3DFBF777217EBAB40015319C /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFBF776217EBAB40015319C /* ConsoleIO.swift */; };
 		3DFBF77A217EC0830015319C /* ScopeShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFBF779217EC0830015319C /* ScopeShell.swift */; };
@@ -45,6 +48,9 @@
 
 /* Begin PBXFileReference section */
 		19E78D88D30DE53EE1093664 /* Pods-CommandLineScope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommandLineScope.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommandLineScope/Pods-CommandLineScope.release.xcconfig"; sourceTree = "<group>"; };
+		3D4804FF2186A3E60009F891 /* DeviceControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceControl.swift; sourceTree = "<group>"; };
+		3D4805032186A48A0009F891 /* LogController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogController.swift; sourceTree = "<group>"; };
+		3D4805052186A4EB0009F891 /* FileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileController.swift; sourceTree = "<group>"; };
 		3D8CBD37217DDE0A000EAC01 /* CommandLineScope */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CommandLineScope; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D8CBD3A217DDE0A000EAC01 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3DA60106218319FE00304A98 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
@@ -102,6 +108,9 @@
 				3DFBF779217EC0830015319C /* ScopeShell.swift */,
 				3DFBF77B217EC9E40015319C /* StringExtension.swift */,
 				3DFBF776217EBAB40015319C /* ConsoleIO.swift */,
+				3D4804FF2186A3E60009F891 /* DeviceControl.swift */,
+				3D4805052186A4EB0009F891 /* FileController.swift */,
+				3D4805032186A48A0009F891 /* LogController.swift */,
 				3DF805372183176500CC3208 /* CommandLineScope-Bridge-Header.h */,
 			);
 			path = CommandLineScope;
@@ -231,9 +240,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D4805042186A48A0009F891 /* LogController.swift in Sources */,
 				3DFBF77C217EC9E40015319C /* StringExtension.swift in Sources */,
 				3D8CBD3B217DDE0A000EAC01 /* main.swift in Sources */,
+				3D4805062186A4EB0009F891 /* FileController.swift in Sources */,
 				3DFBF777217EBAB40015319C /* ConsoleIO.swift in Sources */,
+				3D4805022186A3E60009F891 /* DeviceControl.swift in Sources */,
 				3DFBF77A217EC0830015319C /* ScopeShell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
